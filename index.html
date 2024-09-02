@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KustoCon - the Kusto Learning Conference</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  
+  
+  <style>
+    .navbar {
+    background-color: #000 !important; /* Makes the navbar solid black */
+    }
+    .navbar-brand img {
+      height: 50px;
+    }
+    .section {
+      padding: 60px 0;
+    }
+    .header {
+      background-image: url('img/header_image.png'); /* Replace with your image */
+      background-size: cover;
+      background-position: center;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+    .header h1 {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+    }
+  </style>
+
+
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><img src="img/kustocon_logo.png" alt="Logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#information">Information</a></li>
+        <li class="nav-item"><a class="nav-link" href="#agenda">Agenda</a></li>
+        <li class="nav-item"><a class="nav-link" href="#speakers">Speakers</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#livestream">Live Stream</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <div class="header text-center">
+    <h1>Welcome to KustoCon 2024</h1>
+  </div>
+
+  <!-- Information Section -->
+  <section id="information" class="section">
+    <div class="container">
+      <h2>About the KustoCon</h2>
+      <p>This virtual conference brings together KQL professionals from around the world. Join us for a day of insightful talks, networking, and collaboration.</p>
+    </div>
+  </section>
+
+  <!-- Agenda Section -->
+  <section id="agenda" class="section bg-light">
+    <div class="container">
+      <h2>Agenda</h2>
+      <ul>
+        <li>02:00 PM - Welcome & What is KQL and Why you should learn it</li>
+        <li>03:00 PM - Anchored in Innovation - The Story of Kusto</li>
+        <li>04:00 PM - Threat Hunting with Kusto</li>
+        <li>05:00 PM - Break</li>
+        <li>05:30 PM - Find lateral movement paths using KQL Graph semantics</li>
+        <li>06:30 PM - The Kusto Approach to Unified Audit Log</li>
+        <li>07:30 PM - Detection Engineering rabbit holes, Parsing ASN.1 packets with KQL</li>
+        <li>08:20 PM - Goodbye</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Speakers Section -->
+  <section id="speakers" class="section">
+    <div class="container">
+      <h2>Speakers</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/speakers/alex.png" class="card-img-top" alt="Alex Verboon">
+            <div class="card-body">
+              <h5 class="card-title">Alex Verboon</h5>
+              <p class="card-text">Owner KQLCafe and organizer of KustoCon.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/speakers/gianni.png" class="card-img-top" alt="Gianni Castaldi">
+            <div class="card-body">
+              <h5 class="card-title">Gianni Castaldi</h5>
+              <p class="card-text">Owner KQLCafe and organizer of KustoCon.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img/speakers/frans.png" class="card-img-top" alt="Frans Oudendorp">
+            <div class="card-body">
+              <h5 class="card-title">Frans Oudendorp</h5>
+              <p class="card-text">Co-Organizer of KustoCon and Live Stream specialist.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section bg-light">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>For any queries, please contact us at <a href="mailto:info@kustoncon.com">info@kustoncon.com</a>.</p>
+    </div>
+  </section>
+
+  <!-- Live Stream Section -->
+  <section id="livestream" class="section">
+    <div class="container">
+      <h2>Live Stream</h2>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://player.twitch.tv/?channel=yourchannelname" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center p-3">
+    &copy; 2024 KustoCon. All rights reserved.
+  </footer>
+
+  <!-- Bootstrap and jQuery scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
