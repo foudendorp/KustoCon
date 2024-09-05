@@ -1,0 +1,11 @@
+          <li class="nav-item"><a class="nav-link" href="#livestream">Live Stream</a></li>
+  
+  <!-- Live Stream Section -->
+  <section id="livestream" class="section">
+    <div class="container">
+      <h2>Live Stream</h2>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://player.twitch.tv/?channel=yourchannelname" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
