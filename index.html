@@ -8,7 +8,14 @@
   
   <style>
     .navbar {
-      background-color: #000 !important; /* Makes the navbar solid black */
+      background-color: #000 !important;
+    }
+    .navbar-nav .nav-link {
+      color: #FFBC55 !important; /* Default navbar text color */
+    }
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link.active {
+      color: #FF9900 !important; /* Hover and active state color */
     }
     .navbar-brand img {
       height: 50px;
@@ -31,13 +38,8 @@
       padding: 20px;
       border-radius: 10px;
     }
-    .header h1, .header p {
-      color: #ffbc55; /* Title color */
-      margin: 0;
-    }
-    .header p {
-      font-size: 1.5rem;
-      margin-top: 10px;
+    h1, h2, h3, h4, h5 {
+      color: #FFBC55 !important; /* Header color */
     }
     .form-control {
       margin-bottom: 15px;
@@ -83,16 +85,57 @@
   <section id="agenda" class="section bg-light">
     <div class="container">
       <h2>Agenda</h2>
-      <ul>
-        <li>14:00 CEST - Welcome & What is KQL and Why you should learn it by Gianni & Alex</li>
-        <li>15:00 CEST - Anchored in Innovation - The Story of Kusto by Henning Rauch</li>
-        <li>16:00 CEST - Threat Hunting with Kusto by Mattias Borg & Stefan Schorling</li>
-        <li>17:00 CEST - Break</li>
-        <li>17:30 CEST - Find lateral movement paths using KQL Graph semantics by Fabian Bader</li>
-        <li>18:30 CEST - The Kusto Approach to Unified Audit Log by Bert-Jan Pals</li>
-        <li>19:30 CEST - Detection Engineering rabbit holes, Parsing ASN.1 packets with KQL by Olaf Hartong</li>
-        <li>20:20 CEST - Goodbye</li>
-      </ul>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Time (CEST)</th>
+            <th>Session</th>
+            <th>Speakers</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>14:00</td>
+            <td>Welcome & What is KQL and Why you should learn it</td>
+            <td>Gianni Castaldi & Alex Verboon</td>
+          </tr>
+          <tr>
+            <td>15:00</td>
+            <td>Anchored in Innovation - The Story of Kusto</td>
+            <td>Henning Rauch</td>
+          </tr>
+          <tr>
+            <td>16:00</td>
+            <td>Threat Hunting with Kusto</td>
+            <td>Mattias Borg & Stefan Schorling</td>
+          </tr>
+          <tr>
+            <td>17:00</td>
+            <td>Break</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>17:30</td>
+            <td>Find lateral movement paths using KQL Graph semantics</td>
+            <td>Fabian Bader</td>
+          </tr>
+          <tr>
+            <td>18:30</td>
+            <td>The Kusto Approach to Unified Audit Log</td>
+            <td>Bert-Jan Pals</td>
+          </tr>
+          <tr>
+            <td>19:30</td>
+            <td>Detection Engineering rabbit holes, Parsing ASN.1 packets with KQL</td>
+            <td>Olaf Hartong</td>
+          </tr>
+          <tr>
+            <td>20:20</td>
+            <td>Goodbye</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </section>
 
@@ -222,7 +265,7 @@
   <section id="contact" class="section bg-light">
     <div class="container">
       <h2>Contact</h2>
-      <p>For any queries, please contact us at "info at kustocon.com"</a>.</p>
+      <p>For any queries, please contact us at "info at kustocon.com".</p>
     </div>
   </section>
 
